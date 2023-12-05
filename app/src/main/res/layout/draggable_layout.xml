@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dailysdkdemo.data.utils.ConstrainedDragAndDropView
+        android:id="@+id/dndView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/parentRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/mViewPagerVP2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/videoViewRl"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_128dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_100dp"
+                android:background="@drawable/bg_self_view">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/dimen_8dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/local_camera_mask_view"
+                            style="@style/TextAppearance.BodyMedium.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:gravity="center|center_vertical"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/dimen_10dp"
+                            android:text="@string/you_lbl"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_10sp"
+                            android:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/self_video_view_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/userDetailsTV"
+                            style="@style/TextAppearance.BodyMedium.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/bg_microphone_state"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="@dimen/dimen_7dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:drawableStartCompat="@drawable/ic_microphone_white"
+                            app:drawableTint="@color/white" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/videoViewRlTarget1"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_100dp"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/videoViewRlTarget2"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_60dp"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/videoViewRlTarget3"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_128dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_60dp"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/videoViewRlTarget4"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_128dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_100dp"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+    </com.dailysdkdemo.data.utils.ConstrainedDragAndDropView>
+
+</layout>

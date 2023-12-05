@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_12sp"
+        android:background="@drawable/bg_home"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/pageTV"
+            style="@style/TextAppearance.BodyMedium.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@id/homeIV"
+            android:padding="@dimen/dimen_2dp"
+            android:textColor="@color/eerie_black"
+            android:text="@string/home"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/participantsTV"
+            style="@style/TextAppearance.BodyMedium.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pageTV"
+            android:padding="@dimen/dimen_2dp"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@id/homeIV"
+            android:textColor="@color/grey_text_color"
+            android:text="@string/home"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <ImageView
+            android:id="@+id/homeIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_current_page"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</layout>

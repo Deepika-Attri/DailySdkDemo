@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:saveEnabled="true">
+
+        <include
+            android:id="@+id/joinLayout"
+            layout="@layout/join_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomLinearLayout"
+            android:layout_marginBottom="-2dp" />
+
+        <include
+            android:id="@+id/videoLayout"
+            layout="@layout/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomLinearLayout" />
+
+        <RelativeLayout
+            android:id="@+id/bottomLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_14dp">
+
+            <RelativeLayout
+                android:id="@+id/peopleRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/pagerRl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/arrowIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/dimen_8dp"
+                        android:src="@drawable/ic_arrow" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/arrowIV"
+                        android:background="@android:color/transparent"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabPaddingBottom="0dp"
+                        app:tabPaddingEnd="@dimen/dimen_8dp"
+                        app:tabPaddingStart="@dimen/dimen_8dp"
+                        app:tabPaddingTop="0dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/peopleTV"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/people_in_call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_12sp"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/bottomLayout"
+                layout="@layout/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_65dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

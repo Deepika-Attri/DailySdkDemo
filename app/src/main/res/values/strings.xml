@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DailySdkDemo</string>
+
+    <string name="join_meeting">Join Meeting</string>
+    <string name="meeting_url_or_id">Meeting URL or ID</string>
+    <string name="join">Join</string>
+    <string name="show_video_preview">Show video preview when joining a meeting</string>
+    <string name="turn_off">Turn off</string>
+    <string name="turn_on">Turn on</string>
+    <string name="un_mute">Unmute</string>
+    <string name="mute">Mute</string>
+    <string name="more">More</string>
+    <string name="local_camera">Local Camera</string>
+    <string name="people_in_call">%d people in call</string>
+    <string name="leave">Leave</string>
+    <string name="no_internet_connection">Please check your internet connection.</string>
+    <string name="permission_required">Permission Required!</string>
+    <string name="we_need_permission">We need permission in order to perform this action.</string>
+    <string name="ok">OK</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="guest">Guest (you)</string>
+    <string name="you">(you)</string>
+    <string name="you_lbl">You</string>
+    <string name="guest_lbl">Guest</string>
+    <string name="no_one_else_in_meeting">You are the only one here</string>
+    <string name="failed_to_join_call">Failed to join call</string>
+    <string name="copy_link">Copy link</string>
+    <string name="headphones">Headphones</string>
+    <string name="link_copied">Link copied</string>
+    <string name="people">People</string>
+    <string name="settings">Settings…</string>
+    <string name="mute_all">Mute all</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="page">Page</string>
+
+    <!-- notification -->
+    <string name="ongoing_call">Ongoing video call</string>
+    <string name="touch_to_open">Touch to open</string>
+    <string name="channel_id">service_channel</string>
+    <string name="channel_name">Service Notifications</string>
+
+    <!-- audio -->
+    <string name="speaker">Speaker</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="microphone">Microphone</string>
+    <string name="phone">Phone</string>
+
+    <!-- more option -->
+    <string name="change_name">Change name…</string>
+    <string name="mute_microphone">Mute microphone</string>
+    <string name="turn_off_camera">Turn off camera</string>
+    <string name="remove_from_call">Remove from call…</string>
+
+    <!-- change name-->
+    <string name="enter_your_name">Enter your name</string>
+    <string name="this_is_how">This is how you will be presented</string>
+    <string name="continue_label">Continue</string>
+    <string name="cancel_label">Cancel</string>
+</resources>

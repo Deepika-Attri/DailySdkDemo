@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/participantName"
+            style="@style/TextAppearance.BodyMedium.Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.7"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/people"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_solid"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/micIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_microphone"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/moreIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_more"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

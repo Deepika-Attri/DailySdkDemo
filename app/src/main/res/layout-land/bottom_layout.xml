@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/bottomToolsLinearLayout"
+            android:layout_width="@dimen/dimen_343dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:id="@+id/bottomToolsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_65dp"
+                android:background="@drawable/bg_rounded"
+                android:backgroundTint="@color/options_bg_color"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                tools:ignore="UselessParent">
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/cameraToggleButton"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="@dimen/dimen_65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/dimen_4dp"
+                    android:enabled="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="@string/turn_off"
+                    android:textOff="@string/turn_on"
+                    android:textOn="@string/turn_off"
+                    android:textSize="@dimen/dimen_12sp"
+                    app:drawableTopCompat="@drawable/toggle_button_camera_icon" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/microphoneToggleButton"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="@dimen/dimen_65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/cameraToggleButton"
+                    android:background="@drawable/bg_ripple"
+                    android:drawablePadding="@dimen/dimen_6dp"
+                    android:enabled="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="@string/mute"
+                    android:textOff="@string/un_mute"
+                    android:textOn="@string/mute"
+                    android:textSize="@dimen/dimen_12sp"
+                    app:drawableTopCompat="@drawable/toggle_button_mic_icon" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/dimen_4dp"
+                    android:text="@string/more"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:visibility="invisible"
+                    app:drawableTopCompat="@drawable/ic_more"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

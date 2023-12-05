@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_gravity="end"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_50dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/options_bg_color"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/changeNameTV"
+            style="@style/TextAppearance.BodyMedium.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_18dp"
+            android:text="@string/change_name"
+            android:textSize="@dimen/dimen_13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/participantMoreLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_18dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/muteMicrophoneRL"
+                android:layout_width="@dimen/dimen_140dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/muteMicrophoneTV"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/micIV"
+                    android:gravity="start|center"
+                    android:text="@string/mute_microphone"
+                    android:textSize="@dimen/dimen_13sp" />
+
+                <ImageView
+                    android:id="@+id/micIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_microphone_off"
+                    app:tint="@color/eerie_black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/turnOffCameraRL"
+                android:layout_width="@dimen/dimen_140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18dp">
+
+                <TextView
+                    android:id="@+id/turnOffCameraTV"
+                    style="@style/TextAppearance.BodyMedium.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/cameraIV"
+                    android:gravity="start|center"
+                    android:text="@string/turn_off_camera"
+                    android:textSize="@dimen/dimen_13sp" />
+
+                <ImageView
+                    android:id="@+id/cameraIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_camera_off_more"
+                    app:tint="@color/eerie_black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/removeFromCallTV"
+                style="@style/TextAppearance.BodyMedium.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                android:gravity="center"
+                android:text="@string/remove_from_call"
+                android:textSize="@dimen/dimen_13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_change_name"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/dimen_30dp"
+    android:padding="@dimen/dimen_24dp">
+
+    <TextView
+        style="@style/TextAppearance.BodyMedium.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/enter_your_name"
+        android:textColor="@color/eerie_black"
+        android:paddingVertical="@dimen/dimen_2dp"
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/TextAppearance.BodyMedium.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_2dp"
+        android:gravity="center"
+        android:text="@string/this_is_how"
+        android:textColor="@color/eerie_black"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <EditText
+        android:id="@+id/nameET"
+        style="@style/TextAppearance.BodyMedium.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/bg_edittext_grey"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="@dimen/dimen_8dp"
+        android:textColorHint="@color/text_hint_color"
+        tools:ignore="LabelFor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        style="@style/ButtonAppearance.FilledButton.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/continue_label"
+        android:textStyle="bold"
+        app:backgroundTint="@color/sea_green" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelBtn"
+        style="@style/ButtonAppearance.FilledButton.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/cancel_label"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+</LinearLayout>

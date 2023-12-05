@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/joinCallLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.BodyMedium.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/join_meeting"
+                android:textSize="@dimen/dimen_15sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/linkEditText"
+                style="@style/TextAppearance.BodyMedium.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center"
+                android:hint="@string/meeting_url_or_id"
+                android:importantForAutofill="no"
+                android:inputType="text|textUri"
+                android:padding="@dimen/dimen_8dp"
+                android:textColorHint="@color/text_hint_color" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                style="@style/TextAppearance.BodyMedium.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center"
+                android:hint="@string/guest"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:padding="@dimen/dimen_8dp"
+                android:textColorHint="@color/text_hint_color" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/joinButton"
+                style="@style/ButtonAppearance.FilledButton.Primary"
+                android:layout_width="@dimen/dimen_166dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:enabled="false"
+                android:fontFamily="@font/graphik_medium"
+                android:text="@string/join" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cameraFlipIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/dimen_6dp"
+                    android:src="@drawable/ic_camera_flip"
+                    app:tint="@color/grey_text_color" />
+
+                <ImageView
+                    android:id="@+id/audioIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/dimen_6dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/grey_text_color" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/parentRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/bg_rounded"
+            android:backgroundTint="@color/video_preview_bg_color">
+
+            <TextView
+                android:id="@+id/local_camera_mask_view"
+                style="@style/TextAppearance.BodyMedium.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@color/video_preview_bg_color"
+                android:ellipsize="end"
+                android:gravity="center|center_vertical"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/dimen_20dp"
+                android:text="@string/guest"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/self_video_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/userDetailsTV"
+                style="@style/TextAppearance.BodyMedium.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_microphone_state"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:padding="@dimen/dimen_7dp"
+                android:text="@string/guest"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp"
+                app:drawableStartCompat="@drawable/ic_microphone_white"
+                app:drawableTint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

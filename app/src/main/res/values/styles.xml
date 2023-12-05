@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/sea_green</item>
+        <item name="colorPrimaryVariant">@color/sea_green</item>
+        <item name="colorOnPrimary">@color/sea_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/sea_green</item>
+        <item name="colorSecondaryVariant">@color/sea_green</item>
+        <item name="colorOnSecondary">@color/sea_green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/eerie_black</item>
+    </style>
+
+    <style name="TextAppearance.BodyMedium.Regular" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/graphik_regular</item>
+        <item name="android:textColor">@color/eerie_black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.BodyMedium.Medium" parent="@style/TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/graphik_medium</item>
+        <item name="android:textColor">@color/eerie_black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextAppearance.LabelButton" parent="@style/TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/graphik_regular</item>
+        <item name="android:textColor">@color/eerie_black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="ButtonAppearance.FilledButton.Primary" parent="@style/Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.LabelButton</item>
+        <item name="android:textColor">@color/eerie_black</item>
+        <item name="backgroundTint">@color/text_hint_color</item>
+        <item name="cornerRadius">@dimen/dimen_8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>
